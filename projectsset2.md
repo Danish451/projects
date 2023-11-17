@@ -1,12 +1,38 @@
 # Projects related to Async Js
 
+## project 1
+## project link
+[Click here](https://codesandbox.io/s/keyboard-key-forked-68csry)
+# Solution Code
+```javascript
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class='color'>
+    <table>
+    <tr>
+      <th>Key</th>
+      <th>Keycode</th> 
+      <th>Code</th>
+    </tr>
+    <tr>
+      <td>${e.key === ' ' ? 'Space' : e.key}</td>
+      <td>${e.keyCode}</td> 
+      <td>${e.code}</td>
+    </tr>
+    
+  </table>
+    </div>
+  `;
+});
+
+```
+## project 2
 ## project link
 [Click here](https://codesandbox.io/s/random-background-color-changer-forked-9f2xks)
 
 # Solution Code
-
-## project 2
-
 ```javascript
 // random color generate
 
