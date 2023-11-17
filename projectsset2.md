@@ -1,4 +1,4 @@
-# Projects related to DOM
+# Projects related to Async Js
 
 ## project link
 [Click here](https://codesandbox.io/s/random-background-color-changer-forked-9f2xks)
