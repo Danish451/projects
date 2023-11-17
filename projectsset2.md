@@ -22,6 +22,7 @@ const randomColor = function(){
 
 let intervalId;
 const startChangingColor = function(){
+    // we kept a null check so that when the value gets null it will starts new interval
     if(!intervalId){
       intervalId = setInterval(changeBgColor, 1000);
     }
@@ -31,6 +32,8 @@ const startChangingColor = function(){
 };
 
 const stopChangingColor = function(){
+    // deference the value so that value of intervalId don't get overwrite
+    // and gets the fresh value after each stop action
     clearInterval(intervalId);
     intervalId = null;
 }
